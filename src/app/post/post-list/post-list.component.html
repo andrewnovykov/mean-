@@ -3,13 +3,18 @@
 
 <ul class="collection" *ngIf="posts.length > 0">
   <li class="collection-item avatar" *ngFor="let post of posts">
-    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+
     <span class="title">{{ post.title }}</span>
     <hr>
     <p>{{ post.content }} <br>
        <!-- Second Line -->
     </p>
-    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    <div>
+      <br><br>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+
   </li>
 
 </ul>

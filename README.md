@@ -1,4 +1,8 @@
-# Mean
+# Mean project ( Social network "ANONIM" );
+
+Angular / Mongo / Node js / Express
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

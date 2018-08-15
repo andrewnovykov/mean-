@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -10,6 +11,9 @@ import { PostCreateComponent } from './post/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 
 
+import { PostService } from './post/post.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +21,8 @@ import { HeaderComponent } from './header/header.component';
     PostListComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-
-
-  ],
-  providers: [],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
